@@ -1,0 +1,1218 @@
+<report xmlns="http://developer.cognos.com/schemas/report/15.5/"           expressionLocale="en-us" useStyleVersion="11.4">
+  <!--RSU-SPC-0093 The report specification was upgraded from "http://developer.cognos.com/schemas/report/14.2/" to "http://developer.cognos.com/schemas/report/15.5/" at 2021-7-8. 12:24:46-->
+
+  <drillBehavior/>
+  <layouts>
+    <layout>
+      <reportPages>
+        <page name="PERSbyPeriodControlDate" refQuery="GetPERSAll">
+          <pageBody>
+            <contents>
+              <list horizontalPagination="true" name="PERSbyPeriodControlDateList" refQuery="GetPERSAll">
+                <noDataHandler>
+                  <contents>
+                    <block>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <staticValue>No Data Available</staticValue>
+                          </dataSource>
+                          <style>
+                            <CSS value="padding:10px 18px;"/>
+                          </style>
+                        </textItem>
+                      </contents>
+                    </block>
+                  </contents>
+                </noDataHandler>
+                <style>
+                  <CSS value="border-collapse:collapse"/>
+                  <defaultStyles>
+                    <defaultStyle refStyle="ls"/>
+                  </defaultStyles>
+                </style>
+                <listColumns>
+                  <listColumn>
+                    <listColumnTitle>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lt"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemLabel refDataItem="Employee Number"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnTitle>
+                    <listColumnBody>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lm"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemValue refDataItem="Employee Number"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnBody>
+                  </listColumn>
+                  <listColumn>
+                    <listColumnTitle>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lt"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemLabel refDataItem="SSN (Unformatted)"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnTitle>
+                    <listColumnBody>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lm"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemValue refDataItem="SSN (Unformatted)"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnBody>
+                  </listColumn>
+                  <listColumn>
+                    <listColumnTitle>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lt"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemLabel refDataItem="Last Name"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnTitle>
+                    <listColumnBody>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lm"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemValue refDataItem="Last Name"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnBody>
+                  </listColumn>
+                  <listColumn>
+                    <listColumnTitle>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lt"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemLabel refDataItem="First Name"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnTitle>
+                    <listColumnBody>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lm"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemValue refDataItem="First Name"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnBody>
+                  </listColumn>
+                  <listColumn>
+                    <listColumnTitle>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lt"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemLabel refDataItem="Middle Name"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnTitle>
+                    <listColumnBody>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lm"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemValue refDataItem="Middle Name"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnBody>
+                  </listColumn>
+                  <listColumn>
+                    <listColumnTitle>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lt"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemLabel refDataItem="Employee Type"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnTitle>
+                    <listColumnBody>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lm"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemValue refDataItem="Employee Type"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnBody>
+                  </listColumn>
+                  <listColumn>
+                    <listColumnTitle>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lt"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemLabel refDataItem="Employee Type Code"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnTitle>
+                    <listColumnBody>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lm"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemValue refDataItem="Employee Type Code"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnBody>
+                  </listColumn>
+                  <listColumn>
+                    <listColumnTitle>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lt"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemLabel refDataItem="Employee Status Code"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnTitle>
+                    <listColumnBody>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lm"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemValue refDataItem="Employee Status Code"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnBody>
+                  </listColumn>
+                  <listColumn>
+                    <listColumnTitle>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lt"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemLabel refDataItem="LastHireDate"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnTitle>
+                    <listColumnBody>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lm"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemValue refDataItem="LastHireDate"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnBody>
+                  </listColumn>
+                  <listColumn>
+                    <listColumnTitle>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lt"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemLabel refDataItem="TerminationDate"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnTitle>
+                    <listColumnBody>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lm"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemValue refDataItem="TerminationDate"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnBody>
+                  </listColumn>
+                  <listColumn>
+                    <listColumnTitle>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lt"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemLabel refDataItem="Period Control Date"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnTitle>
+                    <listColumnBody>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lm"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemValue refDataItem="Period Control Date"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnBody>
+                  </listColumn>
+                  <listColumn>
+                    <listColumnTitle>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lt"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemLabel refDataItem="EecUDField03"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnTitle>
+                    <listColumnBody>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lm"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemValue refDataItem="EecUDField03"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnBody>
+                  </listColumn>
+                  <listColumn>
+                    <listColumnTitle>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lt"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemLabel refDataItem="Deduction"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnTitle>
+                    <listColumnBody>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lm"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemValue refDataItem="Deduction"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnBody>
+                  </listColumn>
+                  <listColumn>
+                    <listColumnTitle>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lt"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemLabel refDataItem="Deduction/Benefit Code"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnTitle>
+                    <listColumnBody>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lm"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemValue refDataItem="Deduction/Benefit Code"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnBody>
+                  </listColumn>
+                  <listColumn>
+                    <listColumnTitle>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lt"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemLabel refDataItem="Deduction/Benefit Type Code"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnTitle>
+                    <listColumnBody>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lm"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemValue refDataItem="Deduction/Benefit Type Code"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnBody>
+                  </listColumn>
+                  <listColumn>
+                    <listColumnTitle>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lt"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemLabel refDataItem="Deduction/Benefit Plan Type Code"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnTitle>
+                    <listColumnBody>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lm"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemValue refDataItem="Deduction/Benefit Plan Type Code"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnBody>
+                  </listColumn>
+                  <listColumn>
+                    <listColumnTitle>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lt"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemLabel refDataItem="Total Hours"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnTitle>
+                    <listColumnBody>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lm"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemValue refDataItem="Total Hours"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnBody>
+                  </listColumn>
+                  <listColumn>
+                    <listColumnTitle>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lt"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemLabel refDataItem="Total Deduction Amount"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnTitle>
+                    <listColumnBody>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lm"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemValue refDataItem="Total Deduction Amount"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnBody>
+                  </listColumn>
+                  <listColumn>
+                    <listColumnTitle>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lt"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemLabel refDataItem="Total Earning Amount"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnTitle>
+                    <listColumnBody>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lm"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemValue refDataItem="Total Earning Amount"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnBody>
+                  </listColumn>
+                  <listColumn>
+                    <listColumnTitle>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lt"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemLabel refDataItem="Current Amount (Employer)"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnTitle>
+                    <listColumnBody>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lm"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemValue refDataItem="Current Amount (Employer)"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnBody>
+                  </listColumn>
+                  <listColumn>
+                    <listColumnTitle>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lt"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemLabel refDataItem="Current Amount (Employee)"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnTitle>
+                    <listColumnBody>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lm"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemValue refDataItem="Current Amount (Employee)"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnBody>
+                  </listColumn>
+                  <listColumn>
+                    <listColumnTitle>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lt"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemLabel refDataItem="Deduction Calc Basis Amount"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnTitle>
+                    <listColumnBody>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lm"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemValue refDataItem="Deduction Calc Basis Amount"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnBody>
+                  </listColumn>
+                  <listColumn>
+                    <listColumnTitle>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lt"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemLabel refDataItem="Check Add Mode"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnTitle>
+                    <listColumnBody>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lm"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemValue refDataItem="Check Add Mode"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnBody>
+                  </listColumn>
+                </listColumns>
+              </list>
+            </contents>
+            <style>
+              <defaultStyles>
+                <defaultStyle refStyle="pb"/>
+              </defaultStyles>
+            </style>
+          </pageBody>
+          <style>
+            <defaultStyles>
+              <defaultStyle refStyle="pg"/>
+            </defaultStyles>
+          </style>
+          <propertyList>
+            <propertyItem refDataItem="Employee Number"/>
+            <propertyItem refDataItem="SSN (Unformatted)"/>
+            <propertyItem refDataItem="Last Name"/>
+            <propertyItem refDataItem="First Name"/>
+            <propertyItem refDataItem="Middle Name"/>
+            <propertyItem refDataItem="Employee Type"/>
+            <propertyItem refDataItem="Employee Type Code"/>
+            <propertyItem refDataItem="EecUDField03"/>
+            <propertyItem refDataItem="Employee Status Code"/>
+            <propertyItem refDataItem="Period Control Date"/>
+            <propertyItem refDataItem="Check Add Mode"/>
+            <propertyItem refDataItem="Deduction"/>
+            <propertyItem refDataItem="Deduction/Benefit Code"/>
+            <propertyItem refDataItem="Deduction/Benefit Type Code"/>
+            <propertyItem refDataItem="Deduction/Benefit Plan Type Code"/>
+            <propertyItem refDataItem="Total Hours"/>
+            <propertyItem refDataItem="Total Earning Amount"/>
+            <propertyItem refDataItem="Total Deduction Amount"/>
+            <propertyItem refDataItem="Current Amount (Employer)"/>
+            <propertyItem refDataItem="Current Amount (Employee)"/>
+            <propertyItem refDataItem="Deduction Calc Basis Amount"/>
+          </propertyList>
+        </page>
+      </reportPages>
+    </layout>
+  </layouts>
+  <XMLAttributes>
+    <XMLAttribute name="RS_CreateExtendedDataItems" output="no" value="true"/>
+    <XMLAttribute name="listSeparator" output="no" value=","/>
+    <XMLAttribute output="no" name="decimalSeparator" value="."/>
+    <XMLAttribute output="no" name="RS_modelModificationTime" value="2021-06-03T06:59:38.460Z"/>
+  </XMLAttributes>
+  <queries>
+    <query name="GetPers">
+      <source>
+        <model/>
+      </source>
+      <selection>
+        <dataItem aggregate="none" label="EmployeeNumber" name="Employee Number" rollupAggregate="none">
+          <expression>[Business Layer].[Employee].[Employee Number]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="3"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="0"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="none" label="SSN" name="SSN (Unformatted)" rollupAggregate="none">
+          <expression>[Business Layer].[Employee].[SSN (Unformatted)]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="3"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="0"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="none" label="LastName" name="Last Name" rollupAggregate="none">
+          <expression>[Business Layer].[Employee].[Last Name]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="3"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="0"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="none" label="FirstName" name="First Name" rollupAggregate="none">
+          <expression>[Business Layer].[Employee].[First Name]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="3"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="0"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="none" label="MiddleName" name="Middle Name" rollupAggregate="none">
+          <expression>[Business Layer].[Employee].[Middle Name]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="3"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="0"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="none" label="EmployeeType" name="Employee Type" rollupAggregate="none">
+          <expression>[Business Layer].[Employee].[Employee Type]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="3"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="0"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="none" label="EmployeeTypeCode" name="Employee Type Code" rollupAggregate="none">
+          <expression>[Business Layer].[Employee].[Employee Type Code]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="3"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="0"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="none" label="PersClassification" name="EecUDField03" rollupAggregate="none">
+          <expression>[Business Layer].[Employee].[EecUDField03]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="3"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="0"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="none" label="EmployeeStatusCode" name="Employee Status Code" rollupAggregate="none">
+          <expression>[Business Layer].[Payroll History Summary].[Employee Status Code]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="3"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="0"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="none" label="PeriodControlDate" name="Period Control Date" rollupAggregate="none">
+          <expression>[Business Layer].[Payroll History Summary].[Period Control Date]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="4"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="1"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="none" name="Check Add Mode" rollupAggregate="none">
+          <expression>[Business Layer].[Payroll History Summary].[Check Add Mode]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="3"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="identifier"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="none" name="Deduction" rollupAggregate="none">
+          <expression>[Business Layer].[Deduction/Benefits Check History].[Deduction]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="3"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="0"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="none" label="DeductionBenefitCode" name="Deduction/Benefit Code" rollupAggregate="none">
+          <expression>[Business Layer].[Deduction/Benefits Check History].[Deduction/Benefit Code]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="3"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="identifier"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="none" label="DeductionBenefitTypeCode" name="Deduction/Benefit Type Code" rollupAggregate="none">
+          <expression>[Business Layer].[Deduction/Benefits Check History].[Deduction/Benefit Type Code]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="3"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="0"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="none" label="DeductionBenefitPlanTypeCode" name="Deduction/Benefit Plan Type Code" rollupAggregate="none">
+          <expression>[Business Layer].[Deduction/Benefits Check History].[Deduction/Benefit Plan Type Code]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="3"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="0"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="total" label="TotalHours" name="Total Hours">
+          <expression>[Business Layer].[Payroll History Summary].[Total Hours]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="2"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="2"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="total" label="TotalEarningAmount" name="Total Earning Amount">
+          <expression>[Business Layer].[Payroll History Summary].[Total Earning Amount]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="2"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="2"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="total" label="TotalDeductionAmount" name="Total Deduction Amount">
+          <expression>[Business Layer].[Payroll History Summary].[Total Deduction Amount]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="2"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="2"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="total" label="CurrentAmountEmployer" name="Current Amount (Employer)">
+          <expression>[Business Layer].[Deduction/Benefits Check History].[Current Amount (Employer)]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="2"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="fact"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="total" label="CurrentAmountEmployee" name="Current Amount (Employee)">
+          <expression>[Business Layer].[Deduction/Benefits Check History].[Current Amount (Employee)]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="2"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="fact"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="total" label="DeductionCalcBasisAmount" name="Deduction Calc Basis Amount">
+          <expression>[Business Layer].[Deduction/Benefits Check History].[Deduction Calc Basis Amount]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="2"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="2"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="none" rollupAggregate="none" name="Last Hire Date">
+          <expression>[Business Layer].[Employee].[Last Hire Date]</expression>
+          <XMLAttributes>
+            <XMLAttribute output="no" name="RS_dataType" value="4"/>
+            <XMLAttribute output="no" name="RS_dataUsage" value="1"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="none" rollupAggregate="none" name="Termination Date">
+          <expression>[Business Layer].[Employee].[Termination Date]</expression>
+          <XMLAttributes>
+            <XMLAttribute output="no" name="RS_dataType" value="4"/>
+            <XMLAttribute output="no" name="RS_dataUsage" value="1"/>
+          </XMLAttributes>
+        </dataItem>
+      </selection>
+      <detailFilters>
+        <detailFilter>
+          <filterExpression>[Period Control Date] = ?Period_Control_Date?</filterExpression>
+        </detailFilter>
+        <detailFilter>
+          <filterExpression>([Deduction/Benefit Type Code] like &apos;PRP%&apos;) and ([Deduction/Benefit Plan Type Code] like &apos;PER&apos;)</filterExpression>
+        </detailFilter>
+        <detailFilter use="prohibited">
+          <filterExpression>
+            [Employee Number] in (&apos;00270&apos;, &apos;00336&apos;, &apos;00202&apos;, &apos;00522&apos;)
+
+          </filterExpression>
+        </detailFilter>
+        <detailFilter use="prohibited">
+          <filterExpression>
+            [Employee Number] in (&apos;00270&apos;, &apos;00580&apos;)
+
+          </filterExpression>
+        </detailFilter>
+      </detailFilters>
+    </query>
+    <query name="GetRetirees">
+      <source>
+        <model/>
+      </source>
+      <selection>
+        <dataItem aggregate="none" name="Employee Number" rollupAggregate="none">
+          <expression>[Business Layer].[Employee].[Employee Number]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="3"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="attribute"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="none" name="SSN (Unformatted)" rollupAggregate="none">
+          <expression>[Business Layer].[Employee].[SSN (Unformatted)]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="3"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="attribute"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="none" name="Last Name" rollupAggregate="none">
+          <expression>[Business Layer].[Employee].[Last Name]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="3"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="attribute"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="none" name="First Name" rollupAggregate="none">
+          <expression>[Business Layer].[Employee].[First Name]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="3"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="attribute"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="none" name="Middle Name" rollupAggregate="none">
+          <expression>[Business Layer].[Employee].[Middle Name]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="3"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="attribute"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="none" name="Employee Type" rollupAggregate="none">
+          <expression>[Business Layer].[Employee].[Employee Type]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="3"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="attribute"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="none" name="Employee Type Code" rollupAggregate="none">
+          <expression>[Business Layer].[Employee].[Employee Type Code]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="3"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="attribute"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="none" name="EecUDField03" rollupAggregate="none">
+          <expression>[Business Layer].[Employee].[EecUDField03]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="3"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="attribute"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="none" name="Employment Status Code" rollupAggregate="none">
+          <expression>[Business Layer].[Employee].[Employment Status Code]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="3"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="attribute"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="none" name="Period Control Date" rollupAggregate="none">
+          <expression>[Business Layer].[Payroll History Summary].[Period Control Date] </expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="4"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="identifier"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="none" name="Check Add Mode" rollupAggregate="none">
+          <expression>[Business Layer].[Payroll History Summary].[Check Add Mode]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="3"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="identifier"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem name="Deduction">
+          <expression>&apos;PERS Retiree&apos;</expression>
+        </dataItem>
+        <dataItem name="Deduction/Benefit Code">
+          <expression>&apos;PERS0&apos;</expression>
+        </dataItem>
+        <dataItem name="Deduction/Benefit Type Code">
+          <expression>&apos;PRP&apos;</expression>
+        </dataItem>
+        <dataItem name="Deduction/Benefit Plan Type Code">
+          <expression>&apos;PER&apos;</expression>
+        </dataItem>
+        <dataItem aggregate="total" name="Total Hours">
+          <expression>[Business Layer].[Payroll History Summary].[Total Hours]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="2"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="fact"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="total" name="Total Earning Amount">
+          <expression>[Business Layer].[Payroll History Summary].[Total Earning Amount]</expression>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="2"/>
+            <XMLAttribute name="RS_dataUsage" output="no" value="fact"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem name="Total Deduction Amount">
+          <expression>0</expression>
+        </dataItem>
+        <dataItem name="Current Amount (Employer)">
+          <expression>0</expression>
+        </dataItem>
+        <dataItem name="Current Amount (Employee)">
+          <expression>0</expression>
+        </dataItem>
+        <dataItem name="Deduction Calc Basis Amount">
+          <expression>0</expression>
+        </dataItem>
+        <dataItem aggregate="none" rollupAggregate="none" name="Last Hire Date">
+          <expression>[Business Layer].[Employee].[Last Hire Date]</expression>
+          <XMLAttributes>
+            <XMLAttribute output="no" name="RS_dataType" value="4"/>
+            <XMLAttribute output="no" name="RS_dataUsage" value="1"/>
+          </XMLAttributes>
+        </dataItem>
+        <dataItem aggregate="none" rollupAggregate="none" name="Termination Date">
+          <expression>[Business Layer].[Employee].[Termination Date]</expression>
+          <XMLAttributes>
+            <XMLAttribute output="no" name="RS_dataType" value="4"/>
+            <XMLAttribute output="no" name="RS_dataUsage" value="1"/>
+          </XMLAttributes>
+        </dataItem>
+      </selection>
+      <detailFilters>
+        <detailFilter>
+          <filterExpression>[Period Control Date] = ?Period_Control_Date?</filterExpression>
+        </detailFilter>
+        <detailFilter>
+          <filterExpression>([EecUDField03] in (&apos;98&apos;, &apos;99&apos;)) and ([Check Add Mode] = &apos;R&apos;) </filterExpression>
+        </detailFilter>
+      </detailFilters>
+    </query>
+    <query name="GetPERSAll">
+      <source>
+
+        <queryOperation name="Union1">
+          <queryRefs>
+            <queryRef refQuery="GetPers"/>
+            <queryRef refQuery="GetRetirees"/>
+          </queryRefs>
+          <projectionList autoGenerated="true">
+            <queryItem name="Employee Number"/>
+            <queryItem name="SSN (Unformatted)"/>
+            <queryItem name="Last Name"/>
+            <queryItem name="First Name"/>
+            <queryItem name="Middle Name"/>
+            <queryItem name="Employee Type"/>
+            <queryItem name="Employee Type Code"/>
+            <queryItem name="EecUDField03"/>
+            <queryItem name="Employee Status Code"/>
+            <queryItem name="Period Control Date"/>
+            <queryItem name="Check Add Mode"/>
+            <queryItem name="Deduction"/>
+            <queryItem name="Deduction/Benefit Code"/>
+            <queryItem name="Deduction/Benefit Type Code"/>
+            <queryItem name="Deduction/Benefit Plan Type Code"/>
+            <queryItem name="Total Hours"/>
+            <queryItem name="Total Earning Amount"/>
+            <queryItem name="Total Deduction Amount"/>
+            <queryItem name="Current Amount (Employer)"/>
+            <queryItem name="Current Amount (Employee)"/>
+            <queryItem name="Deduction Calc Basis Amount"/>
+            <queryItem name="Last Hire Date"/>
+            <queryItem name="Termination Date"/>
+          </projectionList>
+        </queryOperation>
+      </source>
+      <selection>
+        <dataItem label="EmployeeNumber" name="Employee Number">
+          <expression>[Union1].[Employee Number]</expression>
+        </dataItem>
+        <dataItem label="SSN" name="SSN (Unformatted)">
+          <expression>[Union1].[SSN (Unformatted)]</expression>
+        </dataItem>
+        <dataItem label="LastName" name="Last Name">
+          <expression>[Union1].[Last Name]</expression>
+        </dataItem>
+        <dataItem label="FirstName" name="First Name">
+          <expression>[Union1].[First Name]</expression>
+        </dataItem>
+        <dataItem label="MiddleName" name="Middle Name">
+          <expression>[Union1].[Middle Name]</expression>
+        </dataItem>
+        <dataItem label="EmployeeType" name="Employee Type">
+          <expression>[Union1].[Employee Type]</expression>
+        </dataItem>
+        <dataItem label="EmployeeTypeCode" name="Employee Type Code">
+          <expression>[Union1].[Employee Type Code]</expression>
+        </dataItem>
+        <dataItem name="LastHireDate">
+          <expression>[Union1].[Last Hire Date]</expression>
+        </dataItem>
+        <dataItem name="TerminationDate">
+          <expression>[Union1].[Termination Date]</expression>
+        </dataItem>
+        <dataItem label="PersClassification" name="EecUDField03">
+          <expression>[Union1].[EecUDField03]</expression>
+        </dataItem>
+        <dataItem label="EmployeeStatusCode" name="Employee Status Code">
+          <expression>[Union1].[Employee Status Code]</expression>
+        </dataItem>
+        <dataItem label="PeriodControlDate" name="Period Control Date">
+          <expression>[Union1].[Period Control Date]</expression>
+        </dataItem>
+        <dataItem label="CheckAddMode" name="Check Add Mode">
+          <expression>[Union1].[Check Add Mode]</expression>
+        </dataItem>
+        <dataItem name="Deduction">
+          <expression>[Union1].[Deduction]</expression>
+        </dataItem>
+        <dataItem label="DeductionBenefitCode" name="Deduction/Benefit Code">
+          <expression>[Union1].[Deduction/Benefit Code]</expression>
+        </dataItem>
+        <dataItem label="DeductionBenefitTypeCode" name="Deduction/Benefit Type Code">
+          <expression>[Union1].[Deduction/Benefit Type Code]</expression>
+        </dataItem>
+        <dataItem label="DeductionBenefitPlanTypeCode" name="Deduction/Benefit Plan Type Code">
+          <expression>[Union1].[Deduction/Benefit Plan Type Code]</expression>
+        </dataItem>
+        <dataItem label="TotalHours" name="Total Hours">
+          <expression>[Union1].[Total Hours]</expression>
+        </dataItem>
+        <dataItem label="TotalEarningAmount" name="Total Earning Amount">
+          <expression>[Union1].[Total Earning Amount]</expression>
+        </dataItem>
+        <dataItem label="TotalDeductionAmount" name="Total Deduction Amount">
+          <expression>[Union1].[Total Deduction Amount]</expression>
+        </dataItem>
+        <dataItem label="CurrentAmountEmployer" name="Current Amount (Employer)">
+          <expression>[Union1].[Current Amount (Employer)]</expression>
+        </dataItem>
+        <dataItem label="CurrentAmountEmployee" name="Current Amount (Employee)">
+          <expression>[Union1].[Current Amount (Employee)]</expression>
+        </dataItem>
+        <dataItem label="DeductionCalcBasisAmount" name="Deduction Calc Basis Amount">
+          <expression>[Union1].[Deduction Calc Basis Amount]</expression>
+        </dataItem>
+      </selection>
+      <queryHints>
+        <useForParameterInfo value="true"/>
+      </queryHints>
+    </query>
+  </queries>
+  <modelPath>/content/folder[@name=&apos;UltiPro BI Content&apos;]/folder[@name=&apos;UltiPro BI for Core HR and Payroll&apos;]/folder[@name=&apos;_UltiPro Delivered Packages&apos;]/package[@name=&apos;Administrator Package&apos;]/model[@name=&apos;model&apos;]</modelPath>
+  <reportName>RunPERSbyPeriodControlDateV3</reportName>
+</report>

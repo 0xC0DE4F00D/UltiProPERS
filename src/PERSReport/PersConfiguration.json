@@ -1,0 +1,214 @@
+{
+  "PersConfiguration": {
+    "MemberRates": [
+      {
+        "Plan": "PERS0",
+        "EffectiveDate": "2020-09-01",
+        "EndDate": "2021-06-30",
+        "Rate": 0.0
+      },
+      {
+        "Plan": "PERS1",
+        "EffectiveDate": "2020-09-01",
+        "EndDate": "2021-06-30",
+        "Rate": 0.06
+      },
+      {
+        "Plan": "PERS2",
+        "EffectiveDate": "2020-09-01",
+        "EndDate": "2021-06-30",
+        "Rate": 0.079
+      },
+      {
+        "Plan": "PERS0",
+        "EffectiveDate": "2021-07-01",
+        "EndDate": null,
+        "Rate": 0.0
+      },
+      {
+        "Plan": "PERS1",
+        "EffectiveDate": "2021-07-01",
+        "EndDate": null,
+        "Rate": 0.06
+      },
+      {
+        "Plan": "PERS2",
+        "EffectiveDate": "2021-07-01",
+        "EndDate": null,
+        "Rate": 0.0636
+      }
+    ],
+    "EmployerRates": [
+      {
+        "Plan": "PERS0",
+        "EffectiveDate": "2020-09-01",
+        "EndDate": "2021-06-30",
+        "Rate": 0.0
+      },
+      {
+        "Plan": "PERS1",
+        "EffectiveDate": "2020-09-01",
+        "EndDate": "2021-06-30",
+        "Rate": 0.1297
+      },
+      {
+        "Plan": "PERS2",
+        "EffectiveDate": "2020-09-01",
+        "EndDate": "2021-06-30",
+        "Rate": 0.1297
+      },
+      {
+        "Plan": "PERS3",
+        "EffectiveDate": "2020-09-01",
+        "EndDate": "2021-06-30",
+        "Rate": 0.1297
+      },
+      {
+        "Plan": "PERS0",
+        "EffectiveDate": "2021-07-01",
+        "EndDate": null,
+        "Rate": 0.0
+      },
+      {
+        "Plan": "PERS1",
+        "EffectiveDate": "2021-07-01",
+        "EndDate": null,
+        "Rate": 0.1025
+      },
+      {
+        "Plan": "PERS2",
+        "EffectiveDate": "2021-07-01",
+        "EndDate": null,
+        "Rate": 0.1025
+      },
+      {
+        "Plan": "PERS3",
+        "EffectiveDate": "2021-07-01",
+        "EndDate": null,
+        "Rate": 0.1025
+      }
+    ],
+    "PayPeriods": [
+      {
+        "BeginDate": "2021-05-28",
+        "EndDate": "2021-06-10",
+        "CheckDate": "2021-06-17",
+        "SplitStartDate": "2021-06-01",
+        "MonthlyReportNumber": 1,
+        "MonthlyNumberOfReports": 2
+      },
+      {
+        "BeginDate": "2021-06-11",
+        "EndDate": "2021-06-24",
+        "CheckDate": "2021-07-01",
+        "SplitStartDate": null,
+        "MonthlyReportNumber": 2,
+        "MonthlyNumberOfReports": 2
+      },
+      {
+        "BeginDate": "2021-06-25",
+        "EndDate": "2021-07-08",
+        "CheckDate": "2021-07-15",
+        "SplitStartDate": "2021-07-01",
+        "MonthlyReportNumber": 1,
+        "MonthlyNumberOfReports": 3
+      },
+      {
+        "BeginDate": "2021-07-09",
+        "EndDate": "2021-07-22",
+        "CheckDate": "2021-07-29",
+        "SplitStartDate": null,
+        "MonthlyReportNumber": 2,
+        "MonthlyNumberOfReports": 3
+      },
+      {
+        "BeginDate": "2021-07-23",
+        "EndDate": "2021-08-05",
+        "CheckDate": "2021-08-12",
+        "SplitStartDate": "2021-08-01",
+        "MonthlyReportNumber": 3,
+        "MonthlyNumberOfReports": 3
+      },
+      {
+        "BeginDate": "2021-08-06",
+        "EndDate": "2021-08-19",
+        "CheckDate": "2021-08-26",
+        "SplitStartDate": null,
+        "MonthlyReportNumber": 1,
+        "MonthlyNumberOfReports": 2
+      },
+      {
+        "BeginDate": "2021-08-20",
+        "EndDate": "2021-09-02",
+        "CheckDate": "2021-09-09",
+        "SplitStartDate": "2021-09-01",
+        "MonthlyReportNumber": 2,
+        "MonthlyNumberOfReports": 2
+      },
+      {
+        "BeginDate": "2021-09-03",
+        "EndDate": "2021-09-16",
+        "CheckDate": "2021-09-23",
+        "SplitStartDate": null,
+        "MonthlyReportNumber": 1,
+        "MonthlyNumberOfReports": 2
+      },
+      {
+        "BeginDate": "2021-09-17",
+        "EndDate": "2021-09-30",
+        "CheckDate": "2021-10-07",
+        "SplitStartDate": null,
+        "MonthlyReportNumber": 2,
+        "MonthlyNumberOfReports": 2
+      },
+      {
+        "BeginDate": "2021-10-01",
+        "EndDate": "2021-10-14",
+        "CheckDate": "2021-10-21",
+        "SplitStartDate": null,
+        "MonthlyReportNumber": 1,
+        "MonthlyNumberOfReports": 2
+      },
+      {
+        "BeginDate": "2021-10-15",
+        "EndDate": "2021-10-28",
+        "CheckDate": "2021-11-04",
+        "SplitStartDate": null,
+        "MonthlyReportNumber": 2,
+        "MonthlyNumberOfReports": 2
+      },
+      {
+        "BeginDate": "2021-10-29",
+        "EndDate": "2021-11-11",
+        "CheckDate": "2021-11-18",
+        "SplitStartDate": "2021-11-01",
+        "MonthlyReportNumber": 1,
+        "MonthlyNumberOfReports": 2
+      },
+      {
+        "BeginDate": "2021-11-12",
+        "EndDate": "2021-11-25",
+        "CheckDate": "2021-12-02",
+        "SplitStartDate": null,
+        "MonthlyReportNumber": 2,
+        "MonthlyNumberOfReports": 2
+      },
+      {
+        "BeginDate": "2021-11-26",
+        "EndDate": "2021-12-09",
+        "CheckDate": "2021-12-16",
+        "SplitStartDate": "2021-12-01",
+        "MonthlyReportNumber": 1,
+        "MonthlyNumberOfReports": 2
+      },
+      {
+        "BeginDate": "2021-12-10",
+        "EndDate": "2021-12-23",
+        "CheckDate": "2021-12-30",
+        "SplitStartDate": null,
+        "MonthlyReportNumber": 2,
+        "MonthlyNumberOfReports": 2
+      }
+    ]
+  }
+}
