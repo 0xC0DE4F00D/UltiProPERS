@@ -136,7 +136,7 @@ namespace PERSReport
                    .WithNotParsed<Options>((errs) => HandleParseErrors(errs));
 
                 G.Display($"*****************************************************************************************");
-                G.Display($"Grant PUD myHR Department of Retirement Services MRL Report Generation {myApp._TimeTag}");
+                G.Display($"myHR Department of Retirement Services MRL Report Generation {myApp._TimeTag}");
                 G.Display($"*****************************************************************************************");
 
 
